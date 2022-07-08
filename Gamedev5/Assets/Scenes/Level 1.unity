@@ -220,9 +220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb090066c792fb49872b4564dc403d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iLevelToLoad: 0
-  sleveltoload: 
-  useInt2LoadLev: 0
 --- !u!1 &121134468
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,9 +610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb090066c792fb49872b4564dc403d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iLevelToLoad: 0
-  sleveltoload: Level 2
-  useInt2LoadLev: 0
 --- !u!1 &534954603
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,9 +889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb090066c792fb49872b4564dc403d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iLevelToLoad: 0
-  sleveltoload: 
-  useInt2LoadLev: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,7 +1480,7 @@ FrictionJoint2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124620858}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 0}

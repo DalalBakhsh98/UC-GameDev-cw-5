@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class Finish : MonoBehaviour
 {
 
-    public int iLevelToLoad;
-    public string sleveltoload;
+    //public int iLevelToLoad;
+    //public string sleveltoload;
 
-    public bool useInt2LoadLev = false;
+    //public bool useInt2LoadLev = false;
 
     // Start is called before the first frame update
     void Start()
@@ -27,23 +27,32 @@ public class Finish : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject collisionGameObject = collision.gameObject;
-
-        if(collisionGameObject.name == "Player")
+        if (collision.CompareTag("Player"))
         {
-            loadscene();
+            SceneManager.LoadScene("Level 2");
         }
 
-        void loadscene()
-        {
-            if(useInt2LoadLev)
-            {
-                SceneManager.LoadScene(iLevelToLoad);
-            }
-            else
-            {
-                SceneManager.LoadScene(sleveltoload);   
-            }
-        }
+        
     }
+
+    // useless code that drove me crazy !!!
+
+    //GameObject collisionGameObject = collision.gameObject;
+
+    //if(collisionGameObject.name == "Player")
+    //{
+    //    loadscene();
+    //}
+
+    //void loadscene()
+    //{
+    //    if(useInt2LoadLev)
+    //    {
+    //        SceneManager.LoadScene(iLevelToLoad);
+    //    }
+    //    else
+    //    {
+    //        SceneManager.LoadScene(sleveltoload);   
+    //    }
+    //}
 }
